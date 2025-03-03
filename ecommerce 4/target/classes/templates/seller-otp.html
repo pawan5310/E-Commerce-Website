@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="/css/home.css">
+<title>Seller Otp</title>
+
+</head>
+<body>
+	<h1>OTP Page</h1>
+	
+	<h3 th:text="${fail}"></h3>
+	<h4 th:text="${pass}"></h4>
+	
+	<form th:action="'/seller-otp/'+${id}" method="post">
+		<input type="number" name="otp">
+		<button>Submit</button>
+	</form>
+</body>
+</html>
